@@ -1,0 +1,91 @@
+1. What is Semantic HTML?
+
+Semantic HTML refers to using HTML tags that have meaningful names and clearly describe their purpose in the document structure.
+Examples: <header>, <footer>, <article>, <section>, <nav>, <main>.
+These improve accessibility, SEO, and code readability, as browsers and assistive technologies can better interpret the content.
+
+2. How does CSS Flexbox differ from Grid?
+
+Flexbox is one-dimensional — it arranges elements either in a row or a column. It’s ideal for aligning and distributing space within a container.
+
+Grid is two-dimensional — it allows layout in both rows and columns simultaneously. It’s used for complex page layouts.
+In short: Use Flexbox for alignment and Grid for structure.
+
+3. What are Media Queries?
+
+Media queries allow CSS to adapt styles based on device characteristics, such as screen width, height, or orientation.
+Example:
+
+@media (max-width: 768px) {
+  body { font-size: 14px; }
+}
+
+
+They’re essential for responsive design, ensuring websites look good on all devices.
+
+4. How do you make a website responsive?
+
+A website becomes responsive through:
+
+Fluid layouts using relative units (%, vw, vh, rem) instead of fixed pixels.
+
+Media queries to adjust design at breakpoints.
+
+Flexible images and media (max-width: 100%).
+
+Modern layout tools like Flexbox and Grid.
+
+Mobile-first approach — design for small screens first, then scale up.
+
+5. Explain the Box Model.
+
+Every HTML element is a rectangular box composed of:
+
+Content – text or images inside the box
+
+Padding – space between content and border
+
+Border – wraps around padding and content
+
+Margin – space outside the border separating elements
+Understanding the box model is critical for layout and spacing control.
+
+6. What is the difference between classes and IDs in CSS?
+
+Classes (.classname): Reusable, can be applied to multiple elements.
+
+IDs (#idname): Unique, used for a single element per page.
+Specificity: IDs have higher specificity than classes — meaning they override class styles when both are applied.
+
+7. How can you optimize CSS for performance?
+
+Minify and combine CSS files to reduce HTTP requests.
+
+Use shorthand properties to simplify code.
+
+Avoid deep selectors (keep specificity low).
+
+Use external stylesheets for caching.
+
+Load critical CSS inline and defer non-critical styles.
+
+Use modern tools like PostCSS, PurgeCSS to remove unused styles.
+
+8. What is the difference between relative and absolute positioning?
+
+Relative positioning: Positions an element relative to its original location.
+
+Absolute positioning: Positions an element relative to its closest positioned ancestor (or the viewport if none exists).
+Absolute elements are removed from the normal document flow, while relative ones remain in it.
+
+9. How does the z-index property work?
+
+z-index controls the stacking order of elements along the z-axis (which elements appear on top).
+It only works on positioned elements (position: relative, absolute, fixed, sticky).
+Higher z-index values appear above lower ones, but stacking context rules (like opacity, transform, etc.) can influence it.
+
+10. What is the difference between padding and margin?
+
+Padding: Space inside the element’s border — between the content and border.
+Margin: Space outside the element’s border — between the border and other elements.
+Padding affects the element’s background area, while margin affects the space between elements.
